@@ -40,10 +40,10 @@ export const PictureSelect: React.FC<PictureSelectProps> = (props) => {
       <div onClick={() => haddleAllCheck()}>
         <span
           className={
-            value.length === idLength ? `${Styles.checked}` : Styles.allCheck
+            value.length === idLength ? `${Styles.allChecked}` : Styles.allCheck
           }
         />
-        <span className={Styles.allcheckText}>全选</span>
+        <span className={Styles.allcheckText}>以选中{value.length}个文件</span>
       </div>
       <div className={Styles.margin16}>
         {pictures.map((item: picturesType) => (
