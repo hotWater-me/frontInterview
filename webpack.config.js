@@ -7,13 +7,13 @@ const UglifyJSWebpackPlguin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   entry: {
-    g6InReact: [
+    testReact: [
       'webpack-dev-server/client?http://localhost:8080',
       './pages/index.js'],
   },
   output: {
     filename: '[name].min.js',
-    library: 'G6',
+    library: 'test',
     libraryTarget: 'umd',
     libraryExport: 'default',
     path: resolve(process.cwd(), 'dist/'),

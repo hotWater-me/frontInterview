@@ -1,12 +1,13 @@
 {
-  "name": "g6-in-react",
+  "name": "test-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js",
     "build": "webpack --config webpack.config.js --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,6 @@
   },
   "homepage": "https://github.com/baizn/g6-in-react#readme",
   "dependencies": {
-    "@antv/g6": "^3.4.0",
-    "antd": "^3.26.20",
-    "classnames": "^2.2.6",
     "html-webpack-plugin": "^4.2.0",
     "js-md5": "^0.7.3",
     "less": "^3.12.2",
@@ -40,8 +38,17 @@
     "@babel/plugin-proposal-decorators": "^7.12.12",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.20",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "mobx": "^4.9.2",
     "mobx-react": "^5.4.3",
     "postcss-loader": "^3.0.0",

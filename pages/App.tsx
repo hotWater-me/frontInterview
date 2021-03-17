@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React from "react";
 import { PictureSelect } from "./PictureSelect";
 
 const pictures = [
