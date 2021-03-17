@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js",
     "build": "webpack --config webpack.config.js --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -40,8 +41,18 @@
     "@babel/plugin-proposal-decorators": "^7.12.12",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.13.0",
+    "@testing-library/react-hooks": "^5.1.0",
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.20",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "mobx": "^4.9.2",
     "mobx-react": "^5.4.3",
     "postcss-loader": "^3.0.0",

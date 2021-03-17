@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PictureSelect renders correctly 1`] = `
+<Fragment>
+  <div
+    onClick={[Function]}
+  >
+    <span
+      className="allChecked"
+    />
+    <span
+      className="allcheckText"
+    >
+      以选中
+      0
+      个文件
+    </span>
+  </div>
+  <div
+    className="margin16"
+  >
+    <span
+      className="imageMargin"
+      key="1"
+    >
+      <span
+        className="noCheck"
+        onClick={[Function]}
+      />
+      <img
+        src="https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ"
+      />
+      <br />
+      <span
+        className="wrap"
+      >
+        https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ
+      </span>
+    </span>
+    <span
+      className="imageMargin"
+      key="2"
+    >
+      <span
+        className="noCheck"
+        onClick={[Function]}
+      />
+      <img
+        src="https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ"
+      />
+      <br />
+      <span
+        className="wrap"
+      >
+        https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ
+      </span>
+    </span>
+    <span
+      className="imageMargin"
+      key="3"
+    >
+      <span
+        className="noCheck"
+        onClick={[Function]}
+      />
+      <img
+        src="https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ"
+      />
+      <br />
+      <span
+        className="wrap"
+      >
+        https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ
+      </span>
+    </span>
+  </div>
+</Fragment>
+`;
