@@ -1,5 +1,5 @@
 {
-  "name": "g6-in-react",
+  "name": "test-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,9 +23,6 @@
   },
   "homepage": "https://github.com/baizn/g6-in-react#readme",
   "dependencies": {
-    "@antv/g6": "^3.4.0",
-    "antd": "^3.26.20",
-    "classnames": "^2.2.6",
     "html-webpack-plugin": "^4.2.0",
     "js-md5": "^0.7.3",
     "less": "^3.12.2",
@@ -42,7 +39,6 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.13.0",
-    "@testing-library/react-hooks": "^5.1.0",
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.20",
