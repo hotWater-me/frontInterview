@@ -43,6 +43,7 @@
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.20",
     "babel-loader": "^8.1.0",
+    "core-js": "^2.6.5",
     "css-loader": "^3.5.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
