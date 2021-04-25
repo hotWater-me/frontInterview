@@ -1,37 +1,39 @@
-import React, { useState, useEffect } from "react";
-import style from "./style.less";
-import { originData } from '../contant'
+import React, { useState, useEffect, useMemo } from "react";
+import GroupRender from "./GroupRender";
+import { originData } from "./contant";
+import {
+  insertAttr,
+  randomString,
+  downGradeData,
+  groupBy,
+  nodePath,
+} from "./utils";
 
 const { Fragment } = React;
-interface compStyleType {
-    contextFarHeight: number
-}
-
 export default () => {
-  const [responseHeight, setResponseHeight] = useState<compStyleType>({contextFarHeight : 0});
-  useEffect(() => {
-    const contextFarHeight = document.getElementById("contextFar")?.clientHeight as number;
-    setResponseHeight({contextFarHeight : contextFarHeight});
-  },[]);
+  //抛开业务 为每个节点添加自定义随机ID
+  const insertData = useMemo(
+    () => insertAttr(originData, randomString(8)),
+    [originData.length]
+  );
 
-  const showHeight = responseHeight.contextFarHeight;
+  //生成关系路径
+  const relaPath = useMemo(() => nodePath(insertData, "->"), [
+    originData.length,
+  ]);
+  //一维化tree数据，为每个节点添加parendId,
+  const downGrade = useMemo(() => downGradeData(insertData, "cusID"), [
+    originData.length,
+  ]);
+  //新建对象 键名为父名,键值为子节点
+  const groupSort = useMemo(() => groupBy(downGrade, "parendId"), [
+    originData.length,
+  ]);
+
+  console.log(groupSort, relaPath, "groupSort");
   return (
     <Fragment>
-      <div className={style.comStyle} style={{ height: showHeight + 32 }}>
-        <div
-          className={style.borderStyle}
-          style={{ height: showHeight - 76 }}
-        />
-        <div
-          className={style.blueDiv}
-          style={{ top: showHeight / 2 - 20 }}
-        ></div>
-        <div className={style.contextFar} id="contextFar">
-          {Array.from("dd5s4").map(() => (
-            <div className={style.contextdiv}></div>
-          ))}
-        </div>
-      </div>
+      <GroupRender groupData={originData} />
     </Fragment>
   );
 };
